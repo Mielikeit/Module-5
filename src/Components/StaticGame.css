@@ -1,0 +1,80 @@
+/* COLOR PALLET: 
+light goldenrod yellow: F2F6D0
+honeydew:               D0E1D4
+bone:                   D9D2B6
+desert sand:            E4BE9E
+old lavender:           71687A
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.Options {
+  width: 100%;
+  height: 150px;
+  background-color: #30292f;
+
+  /* FIGURE OUT HOW TO SPACE THEM CORRECTLY */
+}
+
+/* QUESTION: how can i make the position of the sprites stay in the 
+same spot throughout all screen sizes. */
+
+.Mouse {
+  image-rendering: pixelated;
+  position: absolute;
+  bottom: 110px;
+  right: 1%;
+}
+
+.StaticGame {
+  width: 100%;
+  height: 473px;
+  border: 1px solid black;
+  margin: auto;
+}
+.Character {
+  image-rendering: pixelated;
+  position: relative;
+  /* top: 171px; */
+  /* animation: jump 600ms infinite; */
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+.Block {
+  background-color: #e4be9e;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  /* top: 130px; */
+  left: 100%;
+  animation: block 1s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20px;
+  }
+}
+p {
+  text-align: center;
+}
